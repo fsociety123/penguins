@@ -1,2 +1,6 @@
 data <- read.csv("penguins.csv")
-data$bill_length_mm
+x <- data$bill_len
+
+png("penguins-boxplot.png")
+boxplot(x)
+dev.off()
